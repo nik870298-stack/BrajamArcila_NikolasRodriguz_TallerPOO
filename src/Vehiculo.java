@@ -56,6 +56,7 @@ public class Vehiculo {
         this.precioBase = precioBase;
     }
 
+
     @Override
     public String toString() {
         return "Vehiculo{" +
