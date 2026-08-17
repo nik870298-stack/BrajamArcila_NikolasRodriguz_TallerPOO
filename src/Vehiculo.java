@@ -1,4 +1,4 @@
-public class Vehiculo {
+public abstract class Vehiculo {
     String placa;
     String marca;
     String modelo;
@@ -67,4 +67,11 @@ public class Vehiculo {
                 ", precioBase=" + precioBase +
                 '}';
     }
+
+    public abstract double calcularPrecioFinal();
+
+    public String mostrarFicha(){
+        return "Placa: " + placa + "| Marca: " + marca + "| Modelo: " + modelo + "| Año: " + año + "| Precio Base: " + precioBase ;
+    }
 }
+
