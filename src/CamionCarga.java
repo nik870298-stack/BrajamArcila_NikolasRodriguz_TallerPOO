@@ -17,8 +17,15 @@ public class CamionCarga extends Vehiculo {
         this.capacidadToneladas = capacidadToneladas;
     }
 
-    public void calcularPrecioFinal(){
-        System.out.println("26.000.000");
+    @Override
+    public double calcularPrecioFinal(){
+        double b = 26000000;
+        return b;
+    }
+
+    @Override
+    public String mostrarFicha() {
+        return super.mostrarFicha() + "\nTipo: Camion de Carga | Capacidad de Toneladas: " + capacidadToneladas + "\n";
     }
 
 

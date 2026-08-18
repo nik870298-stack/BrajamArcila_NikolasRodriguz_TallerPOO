@@ -17,10 +17,17 @@ public class Motocicleta extends Vehiculo{
         this.cilindraje = cilindraje;
     }
 
-
-    public void calcularPrecioFinal() {
-        System.out.println("8.700.000");
+    @Override
+    public double calcularPrecioFinal() {
+        double c = 8700000;
+        return c;
     }
+
+    @Override
+    public String mostrarFicha() {
+        return super.mostrarFicha() + "\nTipo: Motocicleta | Cilindraje: " + cilindraje + "\n";
+    }
+
 
     @Override
     public String toString() {
